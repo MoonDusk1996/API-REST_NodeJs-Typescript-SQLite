@@ -2,23 +2,33 @@
 # REST API - Conversor de moedas
 
 ## Sobre
-Conversor de moedas é uma api fácil de usar. Com ela você pode fazer uma conversão de moedas, salvar sua transação em um banco de dados embutido e buscar todas suas transações através de um ID de usuário.
+Conversor de moedas é uma API fácil de usar. Com ela você pode fazer uma conversão de moedas, salvar sua transação em um banco de dados embutido e buscar todas suas transações através de um ID de usuário.
 
 ## Proposito
-Demosntrar certo domínio e conceitos relevantes em uma aplicação API REST como:
+Demosntrar certo domínio e conceitos relevantes em uma aplicação API - REST como:
 
 - Estrutura organizada de uma aplicação API REST.
 - Tipagen bem estruturada com o uso de TypeScript evitando problemas no ambiente desenvolvimento.
 - Testes unitários utilizando Vitest e Supertest.
 - Gerenciamento do banco de dados imbutido na aplicação.
 - Tratamento de erros.
+- Conceito de paradigma funcional e paradigma orientado a objeto.
+- Deploy
 - Documentação organizada.
 
-## Referencias da API
 
-### Fazer uma converão
+# Referencias da API
 
-```http
+### End point base da API
+
+```
+  https://conversor-de-moedas.herokuapp.com/api/
+```
+
+
+### Fazer uma conversão
+
+```
   GET https://conversor-de-moedas.herokuapp.com/api/convert/{user_id}/{source_currency}/{source_amount}/{destination_currency}
 ```
 
@@ -48,7 +58,7 @@ Demosntrar certo domínio e conceitos relevantes em uma aplicação API REST com
 
 ### Checar transações de um usuário
 
-```http
+```
   GET https://conversor-de-moedas.herokuapp.com/api/transactions/{user_id}
 ```
 
